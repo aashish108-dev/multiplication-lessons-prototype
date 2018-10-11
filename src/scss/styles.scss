@@ -1,0 +1,40 @@
+body {
+  color: black;
+}
+.number{
+	padding: 4%;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	width: 96%;
+	margin-bottom: 25px;
+}
+
+@media screen and (min-width:42.5625em) and (max-width:61.25em){
+	.number{
+		width: 40%;
+		margin-bottom: 25px;
+	}
+	.number:nth-of-type(2n+1){
+		clear:both;
+	}
+
+}
+@media screen and (min-width:61.25em){
+	.number{
+		width: 25%;
+		margin-bottom: 25px;
+	}
+	.number:nth-of-type(3n+1){
+		clear:both;
+	}
+}
+@media screen and (min-width:90em){
+	.container{
+		width: 75%;
+    margin: 0 auto;
+	}
+}
+.highlightNumber{
+	border: 1px solid red;
+}

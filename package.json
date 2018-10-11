@@ -1,0 +1,25 @@
+{
+  "name": "multiplication-lessons-prototype",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "./node_modules/.bin/babel src/js --out-dir dist --presets=@babel/env",
+    "build:css": "sass src/scss:dist",
+    "start": "npm run build:js && npm run build:css && nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sass": "^1.14.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "nodemon": "^1.18.4"
+  }
+}
